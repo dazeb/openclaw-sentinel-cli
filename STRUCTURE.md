@@ -172,7 +172,7 @@ In this release, gateway secrets routes are intentionally deferred. `secrets:*` 
 Priority generally follows explicit config -> env var -> default:
 
 - `apiKey`: config `apiKey` -> `SENTINEL_API_KEY` -> none (error or setup message)
-- `baseUrl`: config `baseUrl` -> `SENTINEL_API_BASE_URL` -> `https://api.openclawsentinel.com`
+- `baseUrl`: config `baseUrl` -> `SENTINEL_API_BASE_URL` -> `https://openclawsentinel.com`
 - `agentId`: config `agentId` -> `AGENT_ID` -> `default-agent`
 
 ## Current behavior guarantees

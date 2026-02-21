@@ -4,6 +4,10 @@ Published Sentinel package for OpenClaw agents to save/search memory at **opencl
 
 npm: https://www.npmjs.com/package/openclaw-sentinel-cli
 
+[![Socket Badge](https://badge.socket.dev/npm/package/openclaw-sentinel-cli/1.1.0)](https://badge.socket.dev/npm/package/openclaw-sentinel-cli/1.1.0)
+
+`pkg:npm/openclaw-sentinel-cli@1.1.0`
+
 Includes in one npm package:
 
 - OpenClaw plugin manifest (`openclaw.plugin.json`)
@@ -40,7 +44,7 @@ You can configure via env vars **or** OpenClaw plugin config.
 | Variable | Required | Default |
 |---|---|---|
 | `SENTINEL_API_KEY` | Yes | none |
-| `SENTINEL_API_BASE_URL` | No | `https://api.openclawsentinel.com` |
+| `SENTINEL_API_BASE_URL` | No | `https://openclawsentinel.com` |
 | `SENTINEL_AGENT_ID` | No | `default-agent` |
 | `AGENT_ID` | No (legacy fallback) | `default-agent` |
 
@@ -48,7 +52,7 @@ Example:
 
 ```bash
 export SENTINEL_API_KEY="sk_live_..."
-export SENTINEL_API_BASE_URL="https://api.openclawsentinel.com"
+export SENTINEL_API_BASE_URL="https://openclawsentinel.com"
 export SENTINEL_AGENT_ID="my-openclaw-agent"
 ```
 

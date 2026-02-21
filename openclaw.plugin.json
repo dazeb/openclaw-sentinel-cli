@@ -16,7 +16,7 @@
       "baseUrl": {
         "type": "string",
         "format": "uri",
-        "description": "Sentinel API base URL. Defaults to https://api.openclawsentinel.com"
+        "description": "Sentinel API base URL. Defaults to https://openclawsentinel.com"
       },
       "agentId": {
         "type": "string",

@@ -22,7 +22,7 @@ metadata:
 
 - `sentinel` CLI is installed (`npm i -g sentinel-sdk` or use `npx sentinel-sdk`)
 - `SENTINEL_API_KEY` is set
-- Optional: `SENTINEL_API_BASE_URL` (default `https://api.openclawsentinel.com`)
+- Optional: `SENTINEL_API_BASE_URL` (default `https://openclawsentinel.com`)
 - Optional: `SENTINEL_AGENT_ID` (fallback: `AGENT_ID`, then `default-agent`)
 
 ## Quick setup

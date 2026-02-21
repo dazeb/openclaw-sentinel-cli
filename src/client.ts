@@ -5,7 +5,7 @@ export class SentinelClient {
 
   constructor(options: { apiKey: string; agentId: string; baseUrl?: string }) {
     this.apiKey = options.apiKey;
-    this.baseUrl = options.baseUrl ?? 'https://api.openclawsentinel.com';
+    this.baseUrl = options.baseUrl ?? 'https://openclawsentinel.com';
     this.agentId = options.agentId;
   }
 

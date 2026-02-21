@@ -7,7 +7,7 @@ import { SentinelClient } from '../client.js';
 import { resolveWorkspaceDir } from '../workspace.js';
 const program = new Command();
 dotenv.config();
-const DEFAULT_BASE_URL = 'https://api.openclawsentinel.com';
+const DEFAULT_BASE_URL = 'https://openclawsentinel.com';
 const DEFAULT_AGENT_ID = 'default-agent';
 const SECRETS_DEFERRED_MESSAGE = 'Secrets sync over Sentinel Gateway HTTP is deferred in this release. Use local Convex secret sync workflow instead.';
 function resolveRuntimeConfig(options = {}) {

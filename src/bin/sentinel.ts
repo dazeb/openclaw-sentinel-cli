@@ -10,7 +10,7 @@ const program = new Command();
 
 dotenv.config();
 
-const DEFAULT_BASE_URL = 'https://api.openclawsentinel.com';
+const DEFAULT_BASE_URL = 'https://openclawsentinel.com';
 const DEFAULT_AGENT_ID = 'default-agent';
 
 const SECRETS_DEFERRED_MESSAGE =
