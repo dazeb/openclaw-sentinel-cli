@@ -16,7 +16,7 @@ Includes in one npm package:
 ### Global CLI
 
 ```bash
-npm install -g openclaw-sentinel-cli
+npm i -g openclaw-sentinel-cli
 ```
 
 ### One-off via npx
@@ -28,7 +28,7 @@ npx openclaw-sentinel-cli doctor --json
 ### Local dependency
 
 ```bash
-npm install openclaw-sentinel-cli
+npm i openclaw-sentinel-cli
 ```
 
 ## Required config
@@ -78,7 +78,7 @@ sentinel check --json
 
 1. Install package in your OpenClaw project:
    ```bash
-   npm install openclaw-sentinel-cli
+   npm i openclaw-sentinel-cli
    ```
 2. Ensure plugin artifacts are available from package:
    - `openclaw.plugin.json`
