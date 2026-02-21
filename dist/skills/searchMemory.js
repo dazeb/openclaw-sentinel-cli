@@ -1,0 +1,27 @@
+import { z } from 'zod';
+const SearchArgs = z.object({
+    query: z.string().min(1).describe('Search phrase for memory retrieval'),
+    limit: z.number().int().min(1).max(20).optional(),
+    tags: z.array(z.string()).optional(),
+});
+export const createMemorySearchSkill = (sentinel) => ({
+    name: 'search_remote_memory',
+    description: 'Searches saved Sentinel memories by query and optional tags.',
+    parameters: SearchArgs,
+    execute: async (input) => {
+        const args = SearchArgs.parse(input ?? {});
+        const response = (await sentinel.query('memories:search', {
+            query: args.query,
+            limit: args.limit ?? 5,
+            tags: args.tags,
+            includeArchived: false,
+        }));
+        const results = Array.isArray(response?.results) ? response.results : [];
+        return {
+            ok: true,
+            count: results.length,
+            results: results.slice(0, args.limit ?? 5),
+        };
+    },
+});
+//# sourceMappingURL=searchMemory.js.map

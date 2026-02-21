@@ -1,0 +1,52 @@
+{
+  "name": "sentinel-sdk",
+  "version": "1.1.0",
+  "description": "OpenClaw Sentinel memory + reliability SDK, plugin, and CLI",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "sentinel": "./dist/bin/sentinel.js"
+  },
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "SKILL.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/workspace.test.js dist/skills/backupBrain.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "agent",
+    "ai",
+    "memory",
+    "reliability"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "dotenv": "^16.4.1",
+    "zod": "^3.22.4"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.2.19-2"
+  },
+  "openclaw": {
+    "extensions": [
+      "dist/openclaw.js"
+    ],
+    "skill": "SKILL.md"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "overrides": {
+    "tar": "^7.5.8",
+    "minimatch": "^10.2.1"
+  }
+}
