@@ -1,6 +1,8 @@
-# sentinel-sdk
+# openclaw-sentinel-cli
 
-Publish-ready Sentinel package for OpenClaw agents to save/search memory at **openclawsentinel.com** and keep memory sync reliable.
+Published Sentinel package for OpenClaw agents to save/search memory at **openclawsentinel.com** and keep memory sync reliable.
+
+npm: https://www.npmjs.com/package/openclaw-sentinel-cli
 
 Includes in one npm package:
 
@@ -14,19 +16,19 @@ Includes in one npm package:
 ### Global CLI
 
 ```bash
-npm install -g sentinel-sdk
+npm install -g openclaw-sentinel-cli
 ```
 
 ### One-off via npx
 
 ```bash
-npx sentinel-sdk doctor --json
+npx openclaw-sentinel-cli doctor --json
 ```
 
 ### Local dependency
 
 ```bash
-npm install sentinel-sdk
+npm install openclaw-sentinel-cli
 ```
 
 ## Required config
@@ -76,7 +78,7 @@ sentinel check --json
 
 1. Install package in your OpenClaw project:
    ```bash
-   npm install sentinel-sdk
+   npm install openclaw-sentinel-cli
    ```
 2. Ensure plugin artifacts are available from package:
    - `openclaw.plugin.json`
