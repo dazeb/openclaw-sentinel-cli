@@ -1,6 +1,6 @@
 {
   "name": "openclaw-sentinel-cli",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "OpenClaw Sentinel memory + reliability SDK, plugin, and CLI",
   "type": "module",
   "main": "dist/index.js",
