@@ -16,7 +16,7 @@ flowchart LR
   OC --> Plugin[src/openclaw.ts register]
   Plugin --> Skills
 
-  Client --> API[(api.openclawsentinel.com)]
+  Client --> API[(openclawsentinel.com/api/v1)]
 ```
 
 ## Repository layout
