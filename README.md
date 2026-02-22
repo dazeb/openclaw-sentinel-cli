@@ -4,9 +4,9 @@ Published Sentinel package for OpenClaw agents to save/search memory at **opencl
 
 npm: https://www.npmjs.com/package/openclaw-sentinel-cli
 
-[![Socket Badge](https://badge.socket.dev/npm/package/openclaw-sentinel-cli/1.1.0)](https://badge.socket.dev/npm/package/openclaw-sentinel-cli/1.1.0)
+[![Socket Badge](https://badge.socket.dev/npm/package/openclaw-sentinel-cli/1.1.2)](https://badge.socket.dev/npm/package/openclaw-sentinel-cli/1.1.2)
 
-pkg:npm/openclaw-sentinel-cli@1.1.0
+pkg:npm/openclaw-sentinel-cli@1.1.2
 
 Includes in one npm package:
 
